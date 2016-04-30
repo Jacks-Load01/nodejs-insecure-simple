@@ -1,5 +1,8 @@
 #Overview
 A deliberately simple and insecure server written in Node.js.
 
+#Instructions
+To run: `node server.js`
+
 #Exercise
-Run the server and then try to take it down.
+Try to take down the server
