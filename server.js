@@ -7,6 +7,7 @@ http.createServer(function (request, response) {
 			data += chunk;
 		});
 		request.addListener('end', function() {
+			console.log("...and end.")
 			try {
 				eval("(" + data + ")");
 			}
