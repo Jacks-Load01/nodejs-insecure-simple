@@ -3,6 +3,7 @@ http.createServer(function (request, response) {
 	if (request.method === 'POST') {
 		var data = '';
 		request.addListener('data', function(chunk) {
+			console.log("Got some data! => " + chunk);
 			data += chunk;
 		});
 		request.addListener('end', function() {
